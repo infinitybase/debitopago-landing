@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos e Condições de Uso — DebitoPago</title>
+  <meta name="description" content="Termos e Condições de Uso da plataforma DebitoPago, operada pela LANET Tecnologia Ltda.">
+  <meta name="robots" content="index,follow">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/brand/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="site-header__brand" aria-label="DebitoPago — página inicial">
+        <img src="../assets/brand/fullmark-debitopago-color.svg" alt="DebitoPago">
+      </a>
+      <nav class="site-header__nav" aria-label="Navegação principal">
+        <a href="../index.html#como-funciona">Como funciona</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://wa.me/5514959760004" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="legal-page">
+    <div class="container--prose">
+      <nav class="breadcrumb" aria-label="Caminho de navegação">
+        <a href="../index.html">Início</a>
+        <span>Termos de Uso</span>
+      </nav>
+
+      <h1>Termos e Condições de Uso</h1>
+      <p class="small muted">Última atualização: <span class="placeholder">[DATA_ULTIMA_ATUALIZACAO]</span>.</p>
+
+      <div class="legal-page__meta">
+        <dl>
+          <dt>Operadora</dt>
+          <dd>LANET Tecnologia Ltda.</dd>
+          <dt>CNPJ</dt>
+          <dd>54.855.244/0001-85</dd>
+          <dt>Endereço</dt>
+          <dd><span class="placeholder">[ENDERECO_SEDE_LANET]</span></dd>
+          <dt>Contato</dt>
+          <dd><span class="placeholder">[EMAIL_CONTATO]</span> · WhatsApp +55 14 95976-0004</dd>
+        </dl>
+      </div>
+
+      <p>
+        Este documento ("<strong>Termos</strong>") regula o acesso e o uso da plataforma <strong>DebitoPago</strong>
+        ("Plataforma" ou "Serviço"), disponibilizada pela <strong>LANET Tecnologia Ltda.</strong>
+        ("LANET", "nós"), sociedade empresária de responsabilidade limitada inscrita no CNPJ nº 54.855.244/0001-85.
+        Ao iniciar uma conversa no canal WhatsApp oficial, consumir a API ou interagir por qualquer outra superfície do
+        Serviço, você ("Usuário") declara que leu, compreendeu e aceita integralmente estes Termos.
+      </p>
+
+      <p>
+        Se você não concordar com qualquer cláusula, interrompa imediatamente o uso do Serviço. O uso continuado
+        pressupõe aceitação tácita e atualizada das condições vigentes na data da interação.
+      </p>
+
+      <h2 id="sec-1">1. Objeto</h2>
+      <p>
+        O DebitoPago é uma plataforma de <strong>consulta e pagamento de débitos veiculares</strong> — incluindo, sem se
+        limitar a, Imposto sobre a Propriedade de Veículos Automotores (IPVA), licenciamento anual, multas de trânsito
+        e DPVAT — disponibilizada nas seguintes superfícies: (i) chatbot pelo canal oficial do WhatsApp Business;
+        (ii) API REST para integração com parceiros B2B e B2B2C; (iii) outras superfícies digitais oficiais da LANET
+        que vierem a ser lançadas.
+      </p>
+      <p>
+        A Plataforma opera por <strong>identificação exclusiva via placa</strong> do veículo, sem exigir cadastro prévio,
+        login ou instalação de aplicativo por parte do Usuário consumidor final.
+      </p>
+
+      <h2 id="sec-2">2. Definições</h2>
+      <ul>
+        <li><strong>Usuário:</strong> qualquer pessoa natural ou jurídica que interaja com a Plataforma.</li>
+        <li><strong>Parceiro:</strong> pessoa jurídica que integra a API ou o chat embed do DebitoPago a seus próprios sistemas, mediante contrato específico.</li>
+        <li><strong>Débito Veicular:</strong> qualquer tributo, taxa, multa ou encargo de natureza pública vinculado a um veículo automotor, passível de consulta e pagamento pelo Serviço.</li>
+        <li><strong>Fee de Transação:</strong> valor cobrado pela LANET por cada transação liquidada via Plataforma, informado ao Usuário antes da confirmação do pagamento.</li>
+        <li><strong>Pix:</strong> arranjo de pagamento instantâneo regulamentado pelo Banco Central do Brasil (BACEN).</li>
+      </ul>
+
+      <h2 id="sec-3">3. Cadastro e acesso</h2>
+      <p>
+        O Usuário consumidor final <strong>não precisa realizar cadastro prévio</strong> para consultar débitos veiculares.
+        Basta informar a placa do veículo no canal autorizado.
+      </p>
+      <p>
+        Os dados do pagador (nome, CPF ou CNPJ, instituição financeira de origem) são obtidos automaticamente no
+        momento da liquidação do Pix, conforme regras do arranjo de pagamento instantâneo do Banco Central do Brasil.
+        O tratamento desses dados está regulado na <a href="privacidade.html">Política de Privacidade</a>.
+      </p>
+      <p>
+        Parceiros que acessam a API devem celebrar contrato específico com a LANET, que regulará credenciais,
+        limites, SLA e condições comerciais aplicáveis.
+      </p>
+
+      <h2 id="sec-4">4. Funcionamento do Serviço</h2>
+      <h3>4.1 Consulta</h3>
+      <p>
+        Ao receber uma placa válida, a Plataforma consulta bases oficiais ou parceiras para retornar ao Usuário a
+        situação atual do veículo: débitos em aberto, valores, órgão emissor e vencimento. A consulta é prestada em
+        regime de melhor esforço e depende da <strong>disponibilidade das bases de dados oficiais</strong> de cada unidade
+        federativa. Instabilidades nas bases originais podem resultar em retorno parcial ou pendente.
+      </p>
+
+      <h3>4.2 Pagamento</h3>
+      <p>
+        O Usuário decide quais débitos deseja pagar e confirma o valor total, incluindo o Fee de Transação, antes de
+        receber o QR code Pix. A liquidação ocorre diretamente entre a instituição financeira do pagador e a destinação
+        oficial do débito, intermediada pela LANET conforme as autorizações aplicáveis.
+      </p>
+      <p>
+        O comprovante oficial e a confirmação de quitação são enviados ao Usuário assim que o órgão competente
+        processar o pagamento — prazo sujeito ao tempo de compensação da autoridade emissora, fora do controle da
+        LANET.
+      </p>
+
+      <h3>4.3 Natureza intermediária da LANET</h3>
+      <p>
+        A LANET atua exclusivamente como <strong>intermediária técnica</strong> entre o Usuário e os órgãos emissores
+        dos débitos. Não é responsável por: (i) lançamento, cálculo, correção ou anistia de valores originários;
+        (ii) procedimentos de recurso administrativo de multas; (iii) transferência de titularidade do veículo;
+        (iv) vistoria, laudo ou qualquer análise de condição do bem.
+      </p>
+
+      <h2 id="sec-5">5. Obrigações do Usuário</h2>
+      <ul>
+        <li>Informar placa verdadeira, atualizada e de veículo sobre o qual tenha legítimo interesse em consultar ou pagar débitos.</li>
+        <li>Não utilizar a Plataforma para fins ilícitos, fraudulentos ou contrários à ordem pública.</li>
+        <li>Não realizar tentativas de engenharia reversa, burla, scraping massivo, inundação de consultas, acesso não autorizado ou qualquer outra conduta que comprometa a integridade do Serviço.</li>
+        <li>Conferir cuidadosamente os dados do veículo e do débito apresentados antes de autorizar o pagamento.</li>
+        <li>Utilizar meios de pagamento (chave Pix, conta bancária) de sua titularidade ou para os quais detenha autorização legítima.</li>
+      </ul>
+
+      <h2 id="sec-6">6. Fee de Transação</h2>
+      <p>
+        Pela intermediação técnica, a LANET cobra um Fee de Transação informado ao Usuário <strong>antes</strong> da
+        confirmação do pagamento. O valor pode variar conforme natureza do débito, unidade federativa e canal de
+        origem (WhatsApp direto, API de Parceiro). A política de Fee vigente está descrita em
+        <span class="placeholder">[URL_POLITICA_FEE]</span> e pode ser atualizada a qualquer tempo, respeitadas as
+        transações em curso no momento da alteração.
+      </p>
+      <p>
+        Não cobramos mensalidade, assinatura, juros ou parcelamento financiado. Não operamos como instituição de
+        crédito.
+      </p>
+
+      <h2 id="sec-7">7. Propriedade intelectual</h2>
+      <p>
+        Todo o conteúdo da Plataforma — incluindo código, API, identidade visual (marca "DebitoPago", logotipos,
+        colchetes gráficos do sistema Serenitech, paleta, tipografia), textos, fluxos de chatbot, dashboards e
+        documentação — é de titularidade da LANET ou de terceiros devidamente licenciadores, protegido por direitos
+        autorais, marcários e afins.
+      </p>
+      <p>
+        É vedada qualquer reprodução, redistribuição, modificação ou uso comercial não autorizado. Parceiros recebem
+        licença de uso restrita conforme contrato específico.
+      </p>
+
+      <h2 id="sec-8">8. Privacidade e proteção de dados</h2>
+      <p>
+        O tratamento de dados pessoais realizado pela LANET no contexto da Plataforma observa a Lei Geral de Proteção
+        de Dados (Lei nº 13.709/2018 — LGPD) e demais normas aplicáveis. O detalhamento de hipóteses, bases legais,
+        finalidades, compartilhamentos e direitos do titular está na
+        <a href="privacidade.html">Política de Privacidade</a>, parte integrante destes Termos.
+      </p>
+
+      <h2 id="sec-9">9. Responsabilidades e limites</h2>
+      <p>
+        A LANET emprega esforços razoáveis para manter o Serviço operacional, íntegro e seguro, mas <strong>não garante
+        disponibilidade contínua ou absoluta</strong>, podendo haver períodos de manutenção programada ou indisponibilidade
+        decorrente de falhas nas bases de dados oficiais, na rede, nos sistemas de terceiros ou em eventos de força
+        maior.
+      </p>
+      <p>
+        A LANET não se responsabiliza por: (i) valores lançados, corrigidos ou anistiados pelos órgãos oficiais;
+        (ii) prazos de processamento dos órgãos emissores após a liquidação; (iii) prejuízos decorrentes de dados
+        incorretos fornecidos pelo Usuário (ex.: placa errada); (iv) uso indevido do Serviço em desconformidade com
+        estes Termos; (v) falhas atribuíveis ao WhatsApp, provedores de Pix ou operadoras de telecomunicações.
+      </p>
+      <p>
+        Em qualquer hipótese de responsabilidade imputável à LANET, o valor indenizável está limitado ao total dos
+        Fees de Transação efetivamente pagos pelo Usuário nos últimos 12 (doze) meses, ressalvadas as hipóteses de
+        dolo ou culpa grave devidamente comprovadas, observado o disposto na legislação consumerista quando aplicável.
+      </p>
+
+      <h2 id="sec-10">10. Canais oficiais</h2>
+      <p>
+        A LANET só se comunica com Usuários por meio dos seguintes canais oficiais:
+      </p>
+      <ul>
+        <li>WhatsApp Business verificado: <strong>+55 14 95976-0004</strong> (<a href="https://wa.me/5514959760004" target="_blank" rel="noopener">wa.me/5514959760004</a>)</li>
+        <li>Domínio oficial: <strong>debitopago.com.br</strong></li>
+        <li>E-mail de contato: <span class="placeholder">[EMAIL_CONTATO]</span></li>
+      </ul>
+      <p>
+        Qualquer comunicação vinda de número, domínio ou endereço distinto <strong>não é</strong> da LANET e deve ser
+        tratada com desconfiança. Nunca realize Pix para chaves que não constem do QR code gerado pelo próprio
+        Serviço.
+      </p>
+
+      <h2 id="sec-11">11. Suspensão e encerramento</h2>
+      <p>
+        A LANET poderá, a seu critério e sem aviso prévio, suspender ou restringir o acesso do Usuário que violar
+        estes Termos, a legislação aplicável ou cuja conduta apresente risco à integridade do Serviço, sem prejuízo
+        de medidas legais cabíveis.
+      </p>
+      <p>
+        O Usuário pode cessar o uso a qualquer momento, simplesmente deixando de interagir com a Plataforma.
+        Transações já concluídas permanecem válidas e quitadas.
+      </p>
+
+      <h2 id="sec-12">12. Alterações</h2>
+      <p>
+        Estes Termos podem ser atualizados a qualquer tempo, conforme mudanças regulatórias, evolução do Serviço ou
+        decisão de produto. A data da última atualização aparece no topo desta página. Mudanças materiais serão
+        comunicadas com destaque adequado em nossos canais oficiais.
+      </p>
+
+      <h2 id="sec-13">13. Legislação aplicável e foro</h2>
+      <p>
+        Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de
+        <span class="placeholder">[COMARCA_FORO]</span> para dirimir qualquer controvérsia, com renúncia expressa a
+        qualquer outro, por mais privilegiado que seja, ressalvada a competência especial prevista em lei
+        (especialmente a competência do domicílio do consumidor, quando aplicável o Código de Defesa do Consumidor).
+      </p>
+
+      <h2 id="sec-14">14. Disposições finais</h2>
+      <p>
+        A eventual invalidade ou ineficácia de qualquer cláusula destes Termos não afetará as demais, que
+        permanecerão em pleno vigor. A tolerância da LANET quanto ao descumprimento de qualquer disposição não
+        constitui renúncia ao direito de exigir seu cumprimento em ocasiões futuras.
+      </p>
+      <p>
+        Dúvidas sobre estes Termos podem ser enviadas para <span class="placeholder">[EMAIL_CONTATO]</span> ou pelo
+        WhatsApp oficial.
+      </p>
+
+      <p class="small muted" style="margin-top:var(--sp-8); border-top:1px solid var(--line); padding-top:var(--sp-5);">
+        <strong>Nota interna (não publicar):</strong> este documento é um <em>draft jurídico</em>. Campos marcados em
+        amarelo (<span class="placeholder">[ASSIM]</span>) devem ser preenchidos pela LANET e o texto completo deve
+        passar por revisão de advogado especializado antes da publicação.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__fullmark">
+          <img src="../assets/brand/fullmark-debitopago-white.svg" alt="DebitoPago">
+          <p style="color:rgba(255,255,255,0.64); font-size:var(--fs-sm); margin:0;">
+            Débitos veiculares resolvidos no chat.
+          </p>
+        </div>
+        <div>
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="../index.html#como-funciona">Como funciona</a></li>
+            <li><a href="../index.html#frotas">Para frotas</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="contato.html#b2b">Parcerias B2B</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__meta">
+        <span>© 2026 LANET Tecnologia Ltda. · CNPJ 54.855.244/0001-85</span>
+        <span>DebitoPago é uma marca do sistema Serenitech.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

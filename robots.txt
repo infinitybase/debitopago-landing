@@ -1,0 +1,10 @@
+# DebitoPago — robots.txt
+# https://debitopago.com.br
+
+User-agent: *
+Allow: /
+
+# Bloqueios explícitos: nenhum (site institucional 100% público)
+# Se for adicionar área autenticada no futuro, restrinja aqui.
+
+Sitemap: https://debitopago.com.br/sitemap.xml

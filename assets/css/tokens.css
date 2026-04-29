@@ -1,0 +1,85 @@
+/* ==========================================================================
+   DebitoPago — Design Tokens
+   Sistema Serenitech v2.2 · branded por [DP] Verde Quitado
+   Última atualização: 2026-04-24
+   ========================================================================== */
+
+:root {
+  /* -- Cores da família [DP] ------------------------------------------------ */
+  --dp-verde: #1F7A3D;              /* primária — CTA, ticker, destaque */
+  --dp-verde-dark: #4FB871;         /* dark mode + estados alternativos */
+  --dp-verde-darker: #155828;       /* hover em botões primários */
+  --dp-verde-soft: #E8F3EC;         /* fundos pálidos, banners suaves */
+
+  /* -- Tons de contexto (gramática família) --------------------------------- */
+  --grafite: #262626;               /* texto principal */
+  --grafite-soft: #3A3A38;          /* texto secundário, ícones */
+  --muted: #6B6B6B;                 /* colchetes, prefixo fullmark, metadados */
+  --muted-dim: #8A8A8A;             /* placeholders, timestamps */
+  --papel: #F5F4F0;                 /* fundo off-white institucional */
+  --papel-warm: #FAFAF7;            /* faixas alternadas */
+  --line: #E5E4DF;                  /* divisores, bordas sutis */
+  --white: #FFFFFF;
+
+  /* -- Sinalização ---------------------------------------------------------- */
+  --alerta: #D4A72C;                /* avisos, débito vencendo */
+  --erro: #CE1126;                  /* erros, validação falha */
+  --sucesso: var(--dp-verde);
+
+  /* -- Tipografia ----------------------------------------------------------- */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+
+  --fs-xs: 0.75rem;                 /* 12px */
+  --fs-sm: 0.875rem;                /* 14px */
+  --fs-base: 1rem;                  /* 16px */
+  --fs-md: 1.125rem;                /* 18px */
+  --fs-lg: 1.25rem;                 /* 20px */
+  --fs-xl: 1.5rem;                  /* 24px */
+  --fs-2xl: 2rem;                   /* 32px */
+  --fs-3xl: 2.5rem;                 /* 40px */
+  --fs-4xl: 3.25rem;                /* 52px */
+  --fs-hero: 4rem;                  /* 64px — hero headlines */
+
+  --lh-tight: 1.15;
+  --lh-snug: 1.3;
+  --lh-body: 1.55;
+  --lh-loose: 1.75;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* -- Espaçamento ---------------------------------------------------------- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* -- Layout --------------------------------------------------------------- */
+  --container-max: 1120px;
+  --container-narrow: 720px;
+  --container-prose: 640px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(38, 38, 38, 0.06);
+  --shadow-md: 0 4px 12px rgba(38, 38, 38, 0.08);
+  --shadow-lg: 0 12px 32px rgba(38, 38, 38, 0.10);
+
+  /* -- Transição ----------------------------------------------------------- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 240ms;
+}

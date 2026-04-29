@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 798 195" role="img" aria-label="[debitopago]">
+  
+  <path d="M99.97,46.00 L83.97,46.00 L83.97,149.00 L99.97,149.00" fill="none" stroke="#262626" stroke-width="8.00" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M698.03,46.00 L714.03,46.00 L714.03,149.00 L698.03,149.00" fill="none" stroke="#262626" stroke-width="8.00" stroke-linecap="square" stroke-linejoin="miter"/>
+  <text y="123.00" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="100"><tspan x="115.97" fill="#262626">debito</tspan><tspan x="432.62" fill="#262626">pago</tspan></text>
+</svg>
