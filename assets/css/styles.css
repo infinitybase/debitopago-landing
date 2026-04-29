@@ -94,6 +94,8 @@ section.band-warm { background: var(--papel-warm); }
   transition: color var(--dur) var(--ease);
 }
 .site-header__nav a:hover { color: var(--dp-verde); }
+.site-header__nav .btn--primary { background: #E8F3EC; color: var(--dp-verde); }
+.site-header__nav .btn--primary:hover { background: #d4eadb; }
 @media (max-width: 680px) {
   .site-header__nav a:not(.btn) { display: none; }
 }
